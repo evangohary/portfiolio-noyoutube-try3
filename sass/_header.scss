@@ -1,0 +1,253 @@
+
+
+.header {
+    min-width: 100%;
+    background-image: url(../img/abstract-glare-visual-art.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex: 0 0 100%;
+    
+    
+    
+    
+    nav {
+        display: flex;
+        color: #fff;
+        flex-direction: column;
+        flex: 0 0 5%;
+        position: sticky;
+        position: fixed;
+        padding-left: 1.5rem;
+        ul {
+            padding: 0;
+            align-items: stretch;
+            display: flex;
+            flex-direction: column;            
+            
+            li {
+                height: auto;
+                padding: .5rem;
+                margin-bottom: 30vh;
+                margin-top: 4rem;
+                text-decoration: none;
+                list-style: none;
+                justify-content: space-around;
+                align-items: center;
+                
+                
+                a {
+                    color: #ffcff1;
+                    text-decoration: none;
+                    font-size: 3rem;
+                    
+                    
+                    &:hover {
+                        color: black;
+                        border-bottom: 2px solid black;
+                    }
+                }
+            }
+
+            .nav__link {
+                background-image: linear-gradient(120deg, black 49%, #ff1493 50%, #ffcff1 50%);
+                background-size: 240%;
+                transition: all .4s;
+            
+            &:hover {
+                background-position: 100%;
+            }
+            
+            }
+        }
+    }
+
+
+    &__me {
+        flex: 0 0 50%;
+        display: flex;
+        margin-left: 5%;
+        img {
+            margin: 0 auto;
+            align-self: center;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex: 0 0 50%;
+        font-size: 5rem;
+        width: 100%;
+        
+        
+        h1{ 
+            background-color: black;
+            color: #ffcff1;
+            justify-content: center;
+            align-self: center;
+            width: auto;
+        }
+        code {
+            font-size: 3rem;
+            border-bottom: 3px solid #ffcff1;
+        }
+
+    }
+
+    margin-bottom: 20rem;
+}
+
+@media only screen and (max-width: 1500px ) {
+    .header {
+        overflow: hidden;
+        right: 0;
+    }
+
+    .about {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+}
+@media only screen and (max-width: 1300px ) {
+    .header {
+
+        &__text {
+            font-size: 7rem;
+        }
+    }
+
+    .about {
+
+        &__img {
+            img {
+                width: 45rem;
+                height: 45rem;
+            }
+        }
+
+        &__text {
+            
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1125px) {
+    .header {
+        &__text {
+            font-size: 7rem;
+            h1 {
+                width: 30rem;
+            }
+        }
+
+        &__me {
+            margin-left: 10%;
+            img {
+                width: 45rem;
+            }
+        }
+    }
+
+    .projects {
+        margin-left: 15% !important;
+        width: 80%;
+        margin-right: 0;
+
+        &__one--right {
+            margin: 0 auto;
+        }
+    }
+
+    .about {
+        margin-left: 15% !important;
+
+        &__img {
+            img {
+                width: 40rem;
+                height: 40rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px ) {
+    .header {
+    flex-direction: column;
+
+    &__me {
+        margin-top: 10rem;
+        margin-left: 0;
+    }
+
+    &__text {
+        margin-top: 10rem;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            width: auto;
+        }
+    }
+    }
+
+    .about {
+        flex-direction: column;
+        margin-left: 18% !important;
+        
+        &__text {
+            margin-top: -15rem;
+        }
+    }
+
+    .projects {
+        flex-direction: column;
+
+        &__one {
+
+            &--right {
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px ) {
+    .projects {
+
+        &__one {
+            flex-direction: column;
+
+            &--left {
+                margin: 0 auto;
+                margin-top: -10rem;
+            }
+            &--right {
+                margin-left: 0;
+                img {
+                    margin-left: 5rem;
+                    margin-top: 5rem;
+                    
+                }
+            }
+        }
+    }
+    .about {
+        margin-left: 25% !important;
+        width: 75%;
+        &__img {
+            img {
+                width: 35rem;
+                height: 35rem;
+            }
+        }
+
+    }
+}
+
