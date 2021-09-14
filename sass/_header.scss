@@ -103,11 +103,43 @@
     .header {
         overflow: hidden;
         right: 0;
+
+        nav {
+            display: flex;
+            width: 100%;
+            background-color: black;
+            z-index: 100;
+            
+            ul {
+                flex-direction: row;
+                justify-content: space-around;
+                flex: 0 0 100%;
+
+                li {
+                    justify-content: space-between;
+                    margin-bottom: 2rem;
+                    margin-top: 2rem;
+
+                    
+                }
+            }
+        }
     }
 
     .about {
         width: 80%;
         margin: 0 auto;
+    }
+
+    .projects {
+        margin: 0 auto;
+        width: 80%;
+        
+    }
+
+    .contact {
+        margin: 0 auto;
+        width: 80%;
     }
 
 
@@ -129,9 +161,9 @@
             }
         }
 
-        &__text {
+        // &__text {
             
-        }
+        // }
     }
 }
 
@@ -146,7 +178,7 @@
         }
 
         &__me {
-            margin-left: 10%;
+            
             img {
                 width: 45rem;
             }
@@ -154,7 +186,6 @@
     }
 
     .projects {
-        margin-left: 15% !important;
         width: 80%;
         margin-right: 0;
 
@@ -164,7 +195,6 @@
     }
 
     .about {
-        margin-left: 15% !important;
 
         &__img {
             img {
@@ -180,7 +210,7 @@
     flex-direction: column;
 
     &__me {
-        margin-top: 10rem;
+        margin-top: 20rem;
         margin-left: 0;
     }
 
@@ -199,7 +229,6 @@
 
     .about {
         flex-direction: column;
-        margin-left: 18% !important;
         
         &__text {
             margin-top: -15rem;
@@ -239,8 +268,8 @@
         }
     }
     .about {
-        margin-left: 25% !important;
-        width: 75%;
+        
+
         &__img {
             img {
                 width: 35rem;
