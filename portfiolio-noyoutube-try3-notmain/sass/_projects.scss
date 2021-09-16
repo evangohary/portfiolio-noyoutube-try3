@@ -1,0 +1,73 @@
+
+
+.projects {
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+    margin-left: 10%;
+
+    min-height: 40vh;
+    display: flex;
+    justify-content: flex-end;
+
+    background-image: url(../img/swilystars.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    span {
+        margin-top: -200px;        
+        padding-bottom: 300px; 
+        display: block;
+    }
+
+    &__one {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: flex;
+    width: 100%;
+
+
+        &--right {
+            flex: 0 0 50%;
+            display: flex;
+
+            img {
+                max-height: 40vh;
+                opacity: .9;
+                filter: grayscale(97%);
+                transition: .2s ease-in;
+                width: 80%;
+
+                &:hover {
+                    opacity: 1;
+                    filter: none;
+                }
+            }
+        }
+
+        &--left {
+            display: flex;
+            flex: 0 0 50%;
+            flex-direction: column;
+            justify-content: center;
+
+            a {
+                text-decoration: none;
+                color: #ffcff1;
+                font-size: 3rem;
+                border-bottom: 2px solid #ffcff1;
+            }
+
+            h2 {
+                padding-bottom: 2rem;
+                margin-left: 10%;                
+            }
+
+            h3 {
+                color: #ffcff1;
+                font-size: 2.4rem;
+                margin-left: 10%;
+            }
+        }
+    }
+}

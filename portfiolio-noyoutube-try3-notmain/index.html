@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sass/style.css">
+    <title>Evan Gohary</title>
+</head>
+<body>
+    <div class="header"> <!--Start of header   -->
+        <nav>
+            <ul>
+                <li class="nav__link"><a href="#about">About</a></li>
+                <li class="nav__link"><a href="#projects">Projects</a></li>
+                <li class="nav__link"><a href="#contact">Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="header__me">
+            <img src="./img/profile-pic (2).png">
+        </div>
+        <div class="header__text">
+            <h1>Hey, Im <code>Evan</code>. I like building websites.</h1>
+        </div>
+    </div>  <!-- End header -->
+
+    
+    <div class="about"> <!-- Start About -->
+        <span id="about">&nbsp;</span>
+        <div class="about__text">
+            <h2> I picked up coding as a hobby late Feb. of 2021 as a way to kill time between School, Fishing, and building Motorcycle's. That hobby turned into a passion that I have decided to make a career out of. </h2>
+        </div>
+        <div class="about__img">
+                <img src="./img/" alt="">
+        </div>
+    </div> <!-- End About -->
+
+
+    <div class="projects">
+        <span id="projects"></span>
+        <div class="projects__one">
+
+            <div class="projects__one--left"> 
+                <h2><a href="https://dotspeacefulspots.com/" target="_blank">Dots Peaceful Spots</a></h2>
+                <h3>A fully responsive website made to get more rentals</h3>
+            </div>
+
+            <div class="projects__one--right">
+                <a href="https://dotspeacefulspots.com/" target="_blank">
+                <img src="./img/dotspeacefulspotssc.PNG" alt="dotspeacefulspotssc"> </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+    <div class="contact" id="contact">
+        <form name="contact" method="POST" data-netlify="true">
+
+            <p>
+                <label for="name" id="goner">Name</label>
+                <input type="text" id="name" name="name" onmouseover = "addClass()"/>
+            </p>
+            <p>
+                <label for="email" id="goner2">Email</label>
+                <input type="text" id="email" name="email" />
+            </p>
+            <p>
+                <label for="message" id="goner3">Message</label>
+                <textarea id="message" name="message" ></textarea>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

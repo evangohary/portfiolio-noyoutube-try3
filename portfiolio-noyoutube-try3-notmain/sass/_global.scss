@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+* {
+    margin: 0;
+    font-size: 62.5%;
+}
+
+html {
+    background-color: black;
+    max-width: 150rem;
+    margin: 0 auto;
+    
+    
+    ::selection {
+        background-color: #ffcff1;
+        color: #333;
+    }
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+    * {
+        font-size: 50%;
+    }
+
+}
+
+.OpacityGone {
+    top: 1rem;
+}
